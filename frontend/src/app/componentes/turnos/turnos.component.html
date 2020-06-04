@@ -1,0 +1,11 @@
+<div class="turnos">
+    <div align="center">
+        <p>{{atendiendo.cola}}:{{atendiendo.turno}}</p>
+        <button class="btn btn-warning" (click)="atender()">Atender siguiente</button>
+    </div>
+    <div align="center">
+        <h1>Turnos otorgados: {{cantTurnos}}</h1>
+        <h1>Por atender: {{faltaAtender}}</h1>
+        <h1>Atendidos: {{atendidos}}</h1>
+    </div>
+</div>

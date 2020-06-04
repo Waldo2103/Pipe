@@ -1,0 +1,13 @@
+<div *ngIf="!error">
+    <h4>{{ubicacion}}</h4>
+    <h1 align="center">{{clima.temp}}°</h1>
+    <div align="center">
+        <h3>Sensación Térmica:{{clima.sensa}}°</h3>
+        <h3>Humedad:{{clima.hume}}%</h3>
+        <h3>Precipitaciones:{{clima.preci}}%</h3>
+        <h3>{{clima.descriCli}} <img src="{{clima.descriIcon}}"></h3>
+    </div>
+</div>
+
+
+

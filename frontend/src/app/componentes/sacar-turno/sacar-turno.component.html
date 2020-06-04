@@ -1,0 +1,22 @@
+
+<div class="container" >
+    <div class="form" style="padding:20px;">
+        <div>
+          <div class="container">
+            <label><h2>Cola</h2></label><br>
+            <select class="browser-default custom-select" [(ngModel)]="opcionSeleccionada" (change)="capturar()">
+                <option value="0">Selecciona una opción</option>
+                <option *ngFor="let cola of colas">
+                  {{cola}}
+                </option>
+            </select><br><br>
+            <div>
+                <button type="button" class="btn btn-warning" type="button" (click)="obtenerTurno()">Obtener Turno</button>
+            </div>
+            
+            <h1>Turno: {{turno.turno}}</h1>
+            <h2>Cola: {{turno.cola}}</h2>
+          </div>
+        </div>
+    </div>
+  </div>

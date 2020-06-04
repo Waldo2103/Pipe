@@ -1,0 +1,17 @@
+<br><br><br>
+<div class="container">
+
+    <div class="container">
+    
+    <label><b>Ciudad</b></label>
+    <div>
+        <input [(ngModel)]="ciudad" placeholder="Ciudad..." class="form-control" required>
+    </div><br>
+    <div>
+        <button class="btn btn-warning" (click)="traerClima()">Buscar</button>
+    </div><br>
+  </div>
+</div>
+<div class="container">
+    <app-actual [datos]="datos"  *ngIf="actual"></app-actual>
+</div>
